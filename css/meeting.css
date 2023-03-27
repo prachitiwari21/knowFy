@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display',serif;
+    margin: 0;
+    background-color:#31312f;
+    /* overflow: hidden; */
+}
+
+
+#mySidenav a{
+  background-color: #ffffff;
+position: absolute;
+left: -80px;
+transition: 0.3s;
+padding: 15px;
+width: 100px;
+text-decoration: none;
+font-size: 20px;
+color: #005555;
+border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+left: 0;
+background-color: #FF971D;
+color: white;
+}
+
+#home {
+top: 20px;
+}
+
+#about {
+top: 80px;
+}
+
+#test {
+top: 140px;
+}
+
+#sign {
+top: 200px;
+}
+
+.start{
+  display: flex;
+}
+.card-title{
+  justify-content: center;
+  text-align: center;
+  color:#ffffff;
+  /* background: #925971; */
+  padding: 20px;
+  font-weight: 1000;
+  font-size:xx-large;
+  text-decoration:wavy;
+}
+.card-img{
+  display: flex;
+  justify-content: center;
+  
+}
+.img{
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 20%;
+  padding-left: 20px;
+
+}
+.card-content{
+  display: flex;
+  /* display: block; */
+  margin-top: 20px;
+  /* background-color: #925971; */
+  color: white;
+}
+h3{
+  color: #005555;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.left{
+  padding-top: 10%;
+  padding-left: 5%;
+  text-align: left;
+  padding: auto;
+  min-width: 30%;
+  background-image: url('../images/verticalbg.jpg');
+  background-size: cover;
+}
+.right{
+  background-image: url('../images/bgrnd.jpg');
+  min-width: 70%;
+  color:black;
+  padding: 10%;
+
+}
+
+@media screen and (max-width:700px){
+  .card-img{
+    display:none;
+  }
+  .start{
+    display: block;
+  }
+}
+
+.heading{
+  /* background: #3C3B3F; 
+background: -webkit-linear-gradient(to right, #31312f, #3C3B3F);  
+background: linear-gradient(to right, #31312f, #3C3B3F);  */
+/* background-image: url('../images/refback.jpg'); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1a;
+}
+h2 {
+  font-size: 100px;
+  margin: 0;
+   writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .9;
+  color: #ffffff;
+}
+
+.rotate {
+   transform: rotate(180deg);
+   color: #FF971D;
+}
+.div {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: max-content max-content;
+}
+.reference{
+  width: 40%;
+}

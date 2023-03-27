@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display',serif;
+    margin: 0;
+    background-color: #31312f;
+    background-image: url('../images/bgrnd.jpg');
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+.whole{
+    position: relative;
+}
+.knowfy{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #31312f;
+}
+.text{
+    /* font-family: Stencil Std, fantasy; */
+    font-size:xx-large;
+    text-align: center;
+    color: white;
+}
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0; 
+}
+:is(h1,p){
+    margin: 0;
+}
+
+nav a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #31312f;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;   
+}
+nav ul{
+    gap: 3em;
+}
+
+.hero{
+    margin-top: 60px;
+    align-items: center;
+    padding: 2em 0;
+}
+.hero>*{
+    flex-basis: 100%;
+}
+.hero-content{
+    display: grid;
+    gap: 2em;
+}
+.hero-content h1{
+    font-weight: 700;
+    font-size: clamp(48px,4.5vw,90px);
+    color: #005555;
+}
+.hero-content p{
+    font-weight: 500;
+    font-size: 14ox;
+    color: #716F81;
+}
+.btn{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding: 0.7em 0;
+    background-color: #FF971D;
+    color: white;
+    max-width: 150px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: #31312f;
+    color: white;
+}
+.hero-img{
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.hero-img>*{
+    flex: 1 1 10em;
+}
+.hero-img img{
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 0 100px 0 100px;
+    -webkit-border-radius: 0 100px 0 100px;
+    -moz-border-radius: 0 100px 0 100px;
+    -ms-border-radius: 0 100px 0 100px;
+    -o-border-radius: 0 100px 0 100px;
+}
+.hero-img img:nth-of-type(2){
+    border-radius: 0 100px 0 100px;
+    -webkit-border-radius: 0 100px 0 100px;
+    -moz-border-radius: 0 100px 0 100px;
+    -ms-border-radius: 0 100px 0 100px;
+    -o-border-radius: 0 100px 0 100px;
+}
+.hero-img img:nth-of-type(2){
+    border-radius: 0 100px 0 100px;
+    -webkit-border-radius: 0 100px 0 100px;
+    -moz-border-radius: 0 100px 0 100px;
+    -ms-border-radius: 0 100px 0 100px;
+    -o-border-radius: 0 100px 0 100px;
+}
+@media screen and (max-width:700px) {
+
+    .hero{
+        flex-wrap: wrap-reverse;
+        gap: 2em;
+    }
+}
+
+
+#mySidenav a{
+    background-color: #ffffff;
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #005555;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  background-color: #FF971D;
+  color: white;
+}
+
+#home {
+  top: 20px;
+}
+
+#about {
+  top: 80px;
+}
+
+#test {
+  top: 140px;
+}
+
+#sign {
+  top: 200px;
+}
+
+.etiquettes{
+    /* margin-left: 90px; */
+    margin-top: 90px;
+    /* margin-bottom: 50px; */
+    /* margin-right: 90px; */
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ffffff;
+    /* border-radius: 2em; */
+}
+.column2 {
+    float: left;
+    width: 25%;
+    padding: 80px 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row2 {margin: 0 5px;}
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+.card {
+     /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color:#31312f;
+    /* margin-bottom: 100px; */
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (max-width: 1200px) {
+    .column2 {
+      width: 50%;
+      display: block;
+    }
+    .etiquettes{
+        margin: 50px;
+        padding: 20px;
+    }
+    .column2{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+      display: block;
+      /* margin-bottom: 20px; */
+    }
+    .etiquettes{
+        /* margin: 50px; */
+        padding: 20px;
+    }
+    .column2{
+        padding: 20px;
+    }
+}
+.behaviour{
+    font-size:1.2em;
+    color: #005555;
+}
+.img2{
+    margin-bottom: 30px;
+    /* border-radius: 30px; */
+}
+
+.btn2{
+    background-color: #FF971D;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.card:hover{
+    box-shadow: 0 8px 8px 0 #878787; /* this adds the "card" effect */
+   
+}
+.btn2:hover{
+    /* font-size: larger; */
+    background-color: #ffffff;
+    color: #FF971D;
+}
+
+
+#span{
+    background-color:bisque;
+    width: 100%;
+    color:bisque;
+    opacity: 0;
+}
+#span2{
+    background-color:#AEE6E6;
+    width: 100%;
+    color:#AEE6E6;
+}
+  .contrast{
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+  }
+  .contrast2{
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+  }
+
+
+.container2{
+    /* background-color: #AEE6E6; */
+    background-color: #31312f;
+    display: flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 150px; */
+    padding-bottom: 120px;
+}
+
+.fic-char{
+  text-align: left;
+  margin: 35px;
+  color:white;
+  width: 90%;
+  padding: 25px;
+}
+
+.skewed{
+    width: 90%;
+    color: #ffffff;
+    display: flex;
+    background-color: #31312f;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+
+.text2{
+    padding: 1.5em;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+h4{
+   font-weight: 500;
+}
+
+.image{
+    width: 70%;
+    height: 17em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image::before{
+    content: '';
+    position: absolute;
+    left: -6.1em;
+    top: 50%;
+    transform: translateY(-50%) rotate(5.5deg);
+    background:#31312f;
+    width: 20%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+.img{
+    width: 140%;
+}
+
+@media screen and (max-width:1000px){
+    .skewed{
+        margin-top: 20px;
+        display:block;
+        width: 22em;
+        height: fit-content;
+    }
+    .image,.text2{
+        width: 100%;
+    }
+    .img{
+        width: 160%;
+        margin-bottom: 0;
+    }
+    .skewed .image::before{
+        width: 120%;
+        height: 45%;
+        top: -5em;
+        left: 50%;
+        transform: translate(-50%) rotate(10deg);
+    }
+}
+
+
+
+
+.dropbtn {
+    background-color: #FF971D;
+    color:#ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border :none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+ 
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color:#FF971D;
+color: white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    /* display: block; */
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #FF971D;
+  }
+
+
+
+  footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/bgrnd.jpg');
+    height: auto;
+    /* width: 100vw; */
+
+    padding-top: 80px;
+    color: #31312f;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #005555;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #31312f;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #31312f;
+    border: 1.1px solid #005555;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover{
+    background-color: #FF971D;
+    border: #ffffff;
+    color: white;
+}
+
+.footer-bottom{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#FF971D;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color:#878787;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color:#e0b49e;
+}
+      
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+#line{
+    -webkit-text-stroke-width: 2px;
+    background-color: #ffffff;
+    padding: 2px;
+}
